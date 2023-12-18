@@ -1,3 +1,17 @@
+package handlers
+
+import (
+	"encoding/json"
+	"net/http"
+
+	"smart/models"
+	"github.com/gofr-dev/gofr"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+)
+
+
 type DeviceHandlers struct {
 	gofr.Controller
 }
